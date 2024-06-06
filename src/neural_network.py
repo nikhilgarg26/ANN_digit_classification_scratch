@@ -33,7 +33,8 @@ class Network:
             for mini_batch in mini_batches:
                 self.update_mini_batch(mini_batch, learning_rate, lmbda)
             print("Epoch ", i+1 ,"completed!!" )
-        
+            n_test = self.evaluate(test_data)/len(test_data) * 100
+            print("Test Accuracy is: ", n_test)
 
         if test_data:
             n_test = self.evaluate(test_data)/len(test_data) * 100

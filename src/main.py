@@ -27,6 +27,6 @@ test_data = zip(test_inputs, test_results)
 test_data = list(test_data)
 
 import neural_network
-net = neural_network.Network([784,30, 10])
+net = neural_network.Network([784,256, 10])
 
-net.SGD(training_data[:1000], 30, 10, 0.05,lmbda=0.5, test_data=test_data)
+net.SGD(training_data, 120, 10, 0.01, test_data=test_data)
