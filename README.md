@@ -1,1 +1,1 @@
-ANN Digit Classification using Numpy from Scratch
+# ANN Digit Classification using Numpy from Scratch
